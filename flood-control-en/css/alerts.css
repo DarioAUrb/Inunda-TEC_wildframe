@@ -1,0 +1,311 @@
+/* ============================================
+   ALERTS - SPECIFIC STYLES
+   ============================================ */
+
+.alerts-content {
+    min-height: calc(100vh - 70px);
+    background-color: #1a202c;
+}
+
+/* ============================================
+   ALERTS HEADER
+   ============================================ */
+
+.alerts-content h5 {
+    color: #e2e8f0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.alerts-content .text-muted {
+    color: #a0aec0;
+}
+
+/* ============================================
+   FILTERS CARD
+   ============================================ */
+
+.card {
+    background-color: #2d3748 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.form-label {
+    color: #a0aec0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control,
+.btn {
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   ALERTS TABLE
+   ============================================ */
+
+.table-responsive {
+    background-color: #2d3748;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.table thead th {
+    color: #a0aec0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1.25rem;
+    border: none;
+    border-bottom: 2px solid rgba(0, 136, 204, 0.2);
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 1.25rem;
+    color: #e2e8f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 136, 204, 0.08);
+}
+
+.alert-row {
+    border-left: 3px solid transparent;
+}
+
+.alert-row:hover {
+    border-left-color: rgba(0, 136, 204, 0.5);
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+
+.badge {
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge.bg-danger {
+    background-color: rgba(220, 53, 69, 0.2) !important;
+    color: #ff6b6b;
+    border: 1px solid rgba(220, 53, 69, 0.4);
+}
+
+.badge.bg-warning {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.4);
+}
+
+.badge.bg-info {
+    background-color: rgba(23, 162, 184, 0.2) !important;
+    color: #17a2b8;
+    border: 1px solid rgba(23, 162, 184, 0.4);
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+.link-info {
+    color: #17a2b8 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.link-info:hover {
+    color: #20c997 !important;
+    text-decoration: none;
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+
+.pagination {
+    gap: 0.5rem;
+}
+
+.page-link {
+    background-color: #2d3748;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #a0aec0;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: rgba(0, 136, 204, 0.15);
+    border-color: rgba(0, 136, 204, 0.4);
+    color: #0088cc;
+}
+
+.page-item.active .page-link {
+    background-color: #0088cc;
+    border-color: #0088cc;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 136, 204, 0.3);
+}
+
+/* ============================================
+   PAGINATION NAVIGATION
+   ============================================ */
+
+.btn-outline-secondary {
+    color: #a0aec0;
+    border-color: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+}
+
+.btn-outline-secondary:hover {
+    background-color: rgba(0, 136, 204, 0.1);
+    border-color: rgba(0, 136, 204, 0.5);
+    color: #0088cc;
+}
+
+/* ============================================
+   USER PROFILE TOP BAR
+   ============================================ */
+
+.top-bar {
+    background-color: #2d3748 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar .text-white {
+    font-weight: 500;
+}
+
+.top-bar .text-muted {
+    color: #a0aec0 !important;
+    font-size: 0.85rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 1rem 0.75rem;
+    }
+
+    .badge {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .alerts-content {
+        padding: 1rem !important;
+    }
+
+    .alerts-content h5 {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 0.8rem;
+    }
+
+    .form-control,
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table tbody tr {
+    animation: slideUp 0.4s ease-out;
+}
+
+.table tbody tr:nth-child(n+2) {
+    animation-delay: 0.05s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: fadeIn 0.3s ease-out;
+}
